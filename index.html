@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test hashquery.js</title>
+    </head>
+    <body>
+        <script type="text/javascript" src="hashquery.iife.js"></script>
+
+        <form onsubmit="return false"/>
+            <input placeholder="key" id="keyset"/>=<input placeholder="val" id="valset"/><button onclick="set()">set</button>
+        </form>
+
+        <form onsubmit="return false"/>
+            <input placeholder="key" id="keyget"/>=<input placeholder="val" id="valget" disabled/><button onclick="get()">get</button>
+        </form>
+
+        <form onsubmit="return false"/>
+            <input placeholder="key" id="keydel"/><button onclick="del()">del</button>
+        </form>
+
+        <script type="text/javascript">
+        
+            function set() {
+                hashquery.set(
+                    document.getElementById('keyset').value, 
+                    document.getElementById('valset').value
+                );
+            }
+
+            function get() {
+                document.getElementById('valget').value = hashquery.get(
+                    document.getElementById('keyget').value
+                );
+            }
+
+            function del() {
+                hashquery.del(
+                    document.getElementById('keydel').value
+                );
+            }
+        </script>
+    </body>
+</html>

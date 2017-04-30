@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "ES2015",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "strictNullChecks": true,
+        "target": "ES5",
+        "outDir": "./dist"
+    },
+    "include": [
+        "src/**/*"
+    ]
+}

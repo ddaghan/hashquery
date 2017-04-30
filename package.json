@@ -1,0 +1,21 @@
+{
+  "name": "hashquery",
+  "version": "1.0.0",
+  "description": "query string like key value management for window hash",
+  "main": "hashquery.cjs.js",
+  "scripts": {
+    "build": "node_modules/.bin/rollup -c",
+    "test": "echo \"Run index.html in your browser\" && exit 1"
+  },
+  "keywords": [
+    "hash",
+    "query"
+  ],
+  "author": "ddaghan@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^0.41.6",
+    "rollup-plugin-typescript": "^0.8.1",
+    "rollup-plugin-uglify": "^1.0.2"
+  }
+}
